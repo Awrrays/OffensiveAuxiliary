@@ -1,0 +1,31 @@
+{
+    "step": 3,
+    "description": "\u6d4b\u8bd5\u63cf\u8ff0",
+    "exploit": [
+        {
+            "method": "GET",
+            "path": "/testpath/test.php",
+            "header": {
+                "User-Agent": "i'm come in"
+            },
+            "body": ""
+        },
+        {
+            "method": "POST",
+            "path": "/testpostpath/test.php",
+            "header": {
+                "User-Agent": "i'm come in",
+                "Content-Type": "text/xml"
+            },
+            "body": "dGVzdFBPU1RwYXJhbXM="
+        },
+        {
+            "method": "PUT",
+            "path": "/",
+            "header": {
+                "User-Agent": "i'm come in"
+            },
+            "body": "PD9waHAgcGhwaW5mbygpOz8+"
+        }
+    ]
+}
