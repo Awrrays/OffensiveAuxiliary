@@ -21,7 +21,7 @@ C:OffensiveAuxiliary\POC>tree /F
         get_usedspace-php-Sql-Inject-Vul.json
 ```
 
-![image-20230531155424057](.\images\2.png)
+![image-20230531155424057](images/2.png)
 
 ## VulName
 
@@ -31,7 +31,7 @@ VulName => 漏洞名称
 
 选择 "All" 会GET请求所有漏洞路径，返回200即认为漏洞存在，因为开头说了并非扫描工具，而是辅助攻击的
 
-![image-20230531155834686](.\images\3.png)
+![image-20230531155834686](images/3.png)
 
 ## Max Timeout
 
