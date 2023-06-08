@@ -51,7 +51,7 @@ Default.json
 
 尽量只留需要使⽤的Header，把HOST等字段去掉，避免使⽤时将Cookie，HOST等信息刷掉。
 
-```json
+```python
 {
     "step": 3,
     //漏洞描述，漏洞利用成功时会输出到结果框
