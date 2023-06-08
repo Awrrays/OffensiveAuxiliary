@@ -2,7 +2,7 @@
 
 半自动化漏洞利用工具，并非漏洞扫描工具，仅仅算是组合POC然后发包的工具。
 
-![image-20230531154706116](images/1.png)
+![image-20230531154706116](./images/1.png)
 
 ## Components
 
@@ -21,7 +21,7 @@ C:OffensiveAuxiliary\POC>tree /F
         get_usedspace-php-Sql-Inject-Vul.json
 ```
 
-![image-20230531155424057](images/2.png)
+![image-20230531155424057](./images/2.png)
 
 ## VulName
 
@@ -31,7 +31,7 @@ VulName => 漏洞名称
 
 选择 "All" 会GET请求所有漏洞路径，返回200即认为漏洞存在，因为开头说了并非扫描工具，而是辅助攻击的
 
-![image-20230531155834686](images/3.png)
+![image-20230531155834686](./images/3.png)
 
 ## Max Timeout
 
@@ -51,7 +51,7 @@ Default.json
 
 尽量只留需要使⽤的Header，把HOST等字段去掉，避免使⽤时将Cookie，HOST等信息刷掉。
 
-```python
+```json
 {
     "step": 3,
     //漏洞描述，漏洞利用成功时会输出到结果框
@@ -69,7 +69,26 @@ Default.json
                 "User-Agent": "i'm come in"
             },
             // 请求体 Base64后的String
-            "body": ""
+            "body": "",
+            "verify": [ 
+                { 
+                    //状态码=200 
+                    "statusCode": 200 
+                }, 
+                { 
+                    // 响应头包含text/html 
+                    "responseHead": "text/html" 
+                }, 
+                //响应体包含e10adc3949ba59abbe56e057f20f883e 和 success 
+                { 
+                    //响应体包含e10adc3949ba59abbe56e057f20f883e 
+                    "responseBody": "e10adc3949ba59abbe56e057f20f883e" 
+                }, 
+                { 
+                    //响应体包含success 
+                    "responseBody": "success" 
+                } 
+            ]
         },
         {
             "method": "POST",
@@ -91,4 +110,3 @@ Default.json
     ]
 }
 ```
-
